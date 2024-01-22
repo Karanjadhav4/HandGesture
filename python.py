@@ -30,8 +30,10 @@ while True:
                     y2=y
         dist=((x2-x1)**2+(y2-y1)**2)**0.5//4
         cv2.line(image,(x1, y1), (x2, y2),(0, 255, 0), thickness=5)
-        if dist > 30:
+        if dist > 30 and dist < 49:
             pyautogui.press("volumeUp")
+        elif dist>=50:
+            pyautogui.press('space')
         else:
             pyautogui.press("volumeDown")
 
