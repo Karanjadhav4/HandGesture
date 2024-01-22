@@ -1,6 +1,7 @@
 import cv2
 import mediapipe as mp
 import pyautogui
+distance_threshold = 100
 
 webcam = cv2.VideoCapture(0)
 x1=x2=y1=y2=0
@@ -30,14 +31,12 @@ while True:
                     y2=y
         dist=((x2-x1)**2+(y2-y1)**2)**0.5//4
         cv2.line(image,(x1, y1), (x2, y2),(0, 255, 0), thickness=5)
-        if dist > 30 and dist < 49:
+        if dist > 30:
             pyautogui.press("volumeUp")
-        elif dist>=50:
-            pyautogui.press('space')
         else:
             pyautogui.press("volumeDown")
 
-    cv2.imshow("hand volume control by the owner", image)
+    cv2.imshow("hand volume control by the karan ", image)
     key = cv2.waitKey(10)
     if key == 27:
         break
