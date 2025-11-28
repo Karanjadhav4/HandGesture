@@ -53,5 +53,5 @@ This project demonstrates how computer vision + AI can be applied to build moder
 🧪 Practical Python Implementations
 
 ![increase valuem](https://github.com/Karanjadhav4/HandGesture/blob/main/Snapshot%20of%20increase%20volume.png)
-![decrease volume](
+![decrease volume](https://github.com/Karanjadhav4/HandGesture/blob/main/snapshot%20of%20decrease%20volume.png)
 
